@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const PORT = 8008;
+const PORT = process.env.PORT || 8008;
 
 const TODO_ITEMS = ["Go for swimming", "Complete the assignment", "Read the book"];
 
